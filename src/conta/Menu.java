@@ -13,7 +13,7 @@ public class Menu {
 
 		while (true) {
 
-			System.out.println(Cores.TEXT_YELLOW + Cores.ANSI_RED_BACKGROUND
+			System.out.println(Cores.TEXT_WHITE + Cores.ANSI_RED_BACKGROUND_BRIGHT
 					+ "*****************************************************");
 			System.out.println("                                                     ");
 			System.out.println("                   BANCO DA MICH                     ");
