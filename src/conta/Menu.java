@@ -3,17 +3,38 @@ package conta;
 import java.util.Scanner;
 import conta.util.Cores;
 import conta.model.Conta;
+import conta.model.ContaCorrente;
+import conta.model.ContaPoupanca;
 
 public class Menu {
 	public static void main(String[] args) {
-		
-		Conta c1 = new Conta (1,123,1,"Mich",1000.0f);
+
+		// teste da Classe conta
+
+		Conta c1 = new Conta(1, 123, 1, "Mich", 1000.0f);
 		c1.visualizar();
 		c1.sacar(1200.0f);
 		c1.visualizar();
 		c1.depositar(5000.0f);
 		c1.visualizar();
-		
+
+		// Teste Classe conta Corrente
+
+		Conta ccor1 = new Conta(1, 123, 1, "Julitus", 10000.0f);
+		ccor1.visualizar();
+		ccor1.sacar(12000.0f);
+		ccor1.visualizar();
+		ccor1.depositar(5000.0f);
+		ccor1.visualizar();
+
+		// teste da classe conta corrente
+
+		Conta cpoup1 = new Conta(1, 123, 1, "Naomi", 10000.0f);
+		cpoup1.visualizar();
+		cpoup1.sacar(12000.0f);
+		cpoup1.visualizar();
+		cpoup1.depositar(5000.0f);
+		cpoup1.visualizar();
 
 		Scanner leia = new Scanner(System.in);
 
@@ -40,7 +61,7 @@ public class Menu {
 			System.out.println("            9 - Sair                                 ");
 			System.out.println("                                                     ");
 			System.out.println("*****************************************************");
-			
+
 			System.out.println("                                                     " + Cores.TEXT_RESET);
 
 			opcao = leia.nextInt();
