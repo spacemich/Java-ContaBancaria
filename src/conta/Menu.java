@@ -67,7 +67,7 @@ public class Menu {
 			opcao = leia.nextInt();
 
 			if (opcao == 9) {
-				System.out.println(Cores.TEXT_WHITE_BOLD + "\nBanco Mich você feliz com a vida!");
+				System.out.println(Cores.TEXT_WHITE_BOLD + "\nBanco Mich você feliz com a vida!:)");
 				sobre();
 				leia.close();
 				System.exit(0);
